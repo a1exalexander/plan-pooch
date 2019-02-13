@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="scss/style.scss">
+  <title>Plan Pooch</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__logo-wrapper">
+        <img src="images/logo.png" srcset='images/logo@2.png 768w, images/logo@3.png 1024w' alt="logo" class="nav__logo">
+      </div>
+      <label class="dropdown">
+        <input type="checkbox" class="dropdown__checkbox">
+        <ul class='dropdown__list'>
+          <li class="dropdown__back">
+            <object type="image/svg+xml" class='dropdown__back-image' data="images/svg/left-angle-bracket.svg"></object>
+          </li>
+          <li class="dropdown__item">Home</li>
+          <li class="dropdown__item dropdown__item--line">Dashboard</li>
+          <li class="dropdown__line"></li>
+          <li class="dropdown__item dropdown__item--after-line">Sign In</li>
+          <li class="dropdown__item">Register for free</li>
+        </ul>
+        <div class="dropdown__burger">
+            <span class='dropdown__burger-item'></span>
+            <span class='dropdown__burger-item'></span>
+            <span class='dropdown__burger-item'></span>
+            <span class='dropdown__burger-item'></span>
+        </div>
+      </label>
+      <div class="nav__list">
+        <li class="nav__item">
+          <a href='#' class='nav__link'>Home</a>
+        </li>
+        <li class="nav__item">
+          <a href='#' class='nav__link'>Dashboard</a>
+        </li>
+        <li class="nav__item nav__item--button">
+          <a href="#" class="nav__button nav__button--signin">Sign In</a>
+        </li>
+        <li class="nav__item nav__item--button">
+          <a href="#" class='nav__button nav__button--signup'>Register for free</a>
+        </li>
+      </div>
+    </nav>
+    <div class="header__wrapper">
+      <section class="header__inner">
+        <h1 class="header__title">
+          Plan
+          <span class='header__title header__title--bold'>
+            all you need
+          </span>
+          on the go
+        </h1>
+        <p class="header__subtitle">
+          Stop wasting hours searching.
+          <span class="header__subtitle header__subtitle--bold">
+            Pooch-pin
+          </span>
+          all you and your dog need on the go.
+          <a href='#' class="header__subtitle header__subtitle--link">
+            Sign up today for free!
+          </a>
+        </p>
+        <form action="" class="search__form">
+          <div class="search">
+            <input type="text" class="search__input search__input--first" placeholder="Select category">
+            <input type="text" class="search__input" placeholder="Current location">
+            <button class="search__button">Search</button>
+          </div>
+          <div class="search__flags">
+            <label class="search__checkbox">
+              <input type="text" class="search__checkbox-input">
+              <p class="search__checkbox-button">Popular search</p>
+            </label>
+            <label class="search__checkbox">
+              <input type="text" class="search__checkbox-input">
+              <p class="search__checkbox-button">Vet</p>
+            </label>
+            <label class="search__checkbox">
+              <input type="text" class="search__checkbox-input">
+              <p class="search__checkbox-button">Park</p>
+            </label>
+            <label class="search__checkbox">
+              <input type="text" class="search__checkbox-input">
+              <p class="search__checkbox-button">Groomer</p>
+            </label>
+            <label class="search__checkbox">
+              <input type="text" class="search__checkbox-input">
+              <p class="search__checkbox-button">Hotel</p>
+            </label>
+            <label class="search__checkbox">
+              <input type="text" class="search__checkbox-input">
+              <p class="search__checkbox-button">Pub</p>
+            </label>
+          </div>
+        </form>
+      </section>
+      <section class="header__inner">
+        <img src="images/dog.png" alt="dog">
+      </section>
+    </div>
+    <div class="header__links">
+      <a href="#" class="header__link-description">We work with</a>
+      <a href="#" class="header__link">
+        <object type="image/svg+xml" class='header__link-image' data="images/svg/booking.svg"></object>
+      </a>
+      <a href="#" class="header__link">
+        <object type="image/svg+xml" class='header__link-image' data="images/svg/ocado.svg"></object>
+      </a>
+      <a href="#" class="header__link">
+          <object type="image/svg+xml" class='header__link-image' data="images/svg/malmaison.svg"></object>
+      </a>
+    </div>
+  </header>
+  <script src='js/index.js'></script>
+</body>
+</html>

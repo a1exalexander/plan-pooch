@@ -1,0 +1,37 @@
+.search {
+  box-shadow: 0 10px 25px 0 rgba(55, 55, 132, 0.16);
+  background-color: $N0;
+  &__flags {
+    display: none;
+  }
+  &__form {
+    padding: 0 16px;
+  }
+  &__input {
+    @extend %input;
+    width: 100%;
+    border: none;
+    &--first {
+      border-bottom: 1px solid $N1;
+      border-radius: 4px 4px 0 0;
+    }
+  }
+  &__button {
+    width: 100%;
+    min-height: 50px;
+    padding: 12px 16px;
+    border-radius: 0 0 4px 4px;
+    background-image: linear-gradient(99deg, #a96de0, #06c1ab);
+    color: $N0;
+    font-size: $size-3;
+    font-weight: 500;
+    transition-property: background-image, background, linear-gradient;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    @media screen and (min-width: $screen-desktop) {
+      &:hover {
+        background-image: linear-gradient(200deg, #a96de0, #06c1ab);
+      }
+    }
+  }
+}

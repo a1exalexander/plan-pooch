@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="62.5" viewBox="0 0 11 62.5">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#eaeaea}.cls-2{fill:#adaad8}
+        </style>
+    </defs>
+    <g id="connector" transform="translate(-847 -1383.5)">
+        <path id="Line_5" d="M0 0v57" class="cls-1" data-name="Line 5" transform="translate(852.5 1383.5)"/>
+        <circle id="Ellipse_38" cx="5.5" cy="5.5" r="5.5" class="cls-2" data-name="Ellipse 38" transform="translate(847 1435)"/>
+    </g>
+</svg>

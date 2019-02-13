@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('subset-SFUIDisplay-Heavy.woff2') format('woff2'),
+        url('subset-SFUIDisplay-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('subset-SFUIDisplay-Ultralight.woff2') format('woff2'),
+        url('subset-SFUIDisplay-Ultralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('subset-SFUIDisplay-Medium.woff2') format('woff2'),
+        url('subset-SFUIDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('subset-SFUIDisplay-Bold.woff2') format('woff2'),
+        url('subset-SFUIDisplay-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('subset-SFUIDisplay-Semibold.woff2') format('woff2'),
+        url('subset-SFUIDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('subset-SFUIDisplay-Light.woff2') format('woff2'),
+        url('subset-SFUIDisplay-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('subset-SFUIDisplay-Black.woff2') format('woff2'),
+        url('subset-SFUIDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('subset-SFUIDisplay-Thin.woff2') format('woff2'),
+        url('subset-SFUIDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('SFUIDisplay-Regular.woff2') format('woff2'),
+      url('SFUIDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}

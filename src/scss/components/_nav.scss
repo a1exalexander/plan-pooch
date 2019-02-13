@@ -1,0 +1,62 @@
+.nav {
+  height: 64px;
+  padding: 0 16px;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  @include flex-row(space-between, center);
+  @media screen and (min-width: $screen-ipad) {
+    padding: 24px;
+    height: auto;
+  }
+  &__logo-wrapper {
+    flex: 0 0 132px;
+    height: 40px;
+  }
+  &__list {
+    @include flex-row(flex-start, center);
+    display: none;
+    @media screen and (min-width: $screen-ipad) {
+      display: flex;
+      list-style: none;
+      color: $N5;
+    }
+  }
+  &__link {
+    @extend %main-text;
+    color: $N5;
+    transition: color ease-in-out 0.2s;
+    @media screen and (min-width: $screen-ipad) {
+      &:hover {
+        color: $P5;
+      }
+    } 
+  }
+  &__item {
+    margin-right: 32px;
+  }
+  &__button {
+    @extend %button-text;
+    @extend %button;
+    border: 1px solid $P3;
+    &--signin {
+      color: $P3;
+      box-shadow: none;
+      @media screen and (min-width: $screen-ipad) {
+        &:hover {
+          filter: brightness(0.7);
+        }
+      }  
+    }
+    &--signup {
+      background-color: $P3;
+      color: $N0;
+      @media screen and (min-width: $screen-ipad) {
+        &:hover {
+          box-shadow: none;
+          filter: brightness(1.1);
+        }
+      }    
+    }
+  }
+}

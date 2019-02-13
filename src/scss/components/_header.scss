@@ -1,0 +1,51 @@
+.header {
+  min-height: 100vh;
+  background-image: url('~/images/svg/bg-maps.svg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  &__wrapper {
+    padding: 50px 0 0;
+  }
+  &__title {
+    @extend %headline-mobile-text;
+    margin-bottom: 16px;
+    &--bold {
+      font-weight: 600;
+    }
+  }
+  &__subtitle {
+    @extend %main-mobile-text;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 0 35px;
+    &--bold {
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+    }
+    &--link {
+      display: inline-block;
+      color: $P3;
+      font-weight: 500;
+      text-decoration: underline;
+      text-decoration-color: $P3;
+    }
+  }
+  &__links {
+    height: 70px;
+    @include flex-row(space-between, center);
+  }
+  &__link {
+    margin-right: 20px;
+    flex: 20%;
+    display: flex;
+  }
+  &__link-description {
+    white-space: nowrap;
+    margin-right: 20px;
+  }
+  &__link-image {
+
+  }
+}
