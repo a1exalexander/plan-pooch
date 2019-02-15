@@ -46,11 +46,13 @@
   &__back {
     padding-left: 12px;
     margin-bottom: 26px;
+    width: 100%;
     @include flex-row(flex-start, center);
     pointer-events: all;
     transition: opacity;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+    pointer-events: all;
     &:active .dropdown__back-image {
       opacity: 0.6;
     }
