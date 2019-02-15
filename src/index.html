@@ -11,20 +11,20 @@
   <header class="header">
     <nav class="nav">
       <a href='#' class="nav__logo-wrapper">
-        <img src="images/logo.png" srcset='images/logo@2.png 768w, images/logo@3.png 1024w' alt="logo" class="nav__logo">
+        <img src="images/logo.png" srcset='images/logo@2.png 2x, images/logo@3.png 3x' alt="logo" class="nav__logo">
       </a>
       <label class="dropdown">
         <input type="checkbox" class="dropdown__checkbox">
-        <ul class='dropdown__list'>
-          <li class="dropdown__back">
+        <div class='dropdown__list'>
+          <div class="dropdown__back">
             <object type="image/svg+xml" class='dropdown__back-image' data="images/svg/left-angle-bracket.svg"></object>
-          </li>
-          <li class="dropdown__item">Home</li>
-          <li class="dropdown__item dropdown__item--line">Dashboard</li>
-          <li class="dropdown__line"></li>
-          <li class="dropdown__item dropdown__item--after-line">Sign In</li>
-          <li class="dropdown__item">Register for free</li>
-        </ul>
+          </div>
+          <a href='#' class="dropdown__item">Home</a>
+          <a href='#' class="dropdown__item dropdown__item--line">Dashboard</a>
+          <a href='#' class="dropdown__line"></a>
+          <a href='#' class="dropdown__item dropdown__item--after-line">Sign In</a>
+          <a href='#' class="dropdown__item">Register for free</a>
+        </div>
         <div class="dropdown__burger">
             <span class='dropdown__burger-item'></span>
             <span class='dropdown__burger-item'></span>
@@ -32,7 +32,7 @@
             <span class='dropdown__burger-item'></span>
         </div>
       </label>
-      <div class="nav__list">
+      <ul class="nav__list">
         <li class="nav__item">
           <a href='#' class='nav__link'>Home</a>
         </li>
@@ -45,10 +45,10 @@
         <li class="nav__item nav__item--button">
           <a href="#" class='nav__button nav__button--signup'>Register for free</a>
         </li>
-      </div>
+      </ul>
     </nav>
     <div class="header__wrapper">
-      <section class="header__inner header__inner--map">
+      <div class="header__inner header__inner--map">
         <h1 class="header__title">
           Plan
           <span class='header__title header__title--bold'>
@@ -66,7 +66,7 @@
             Sign up today for free!
           </a>
         </p>
-        <form action="" class="search__form">
+        <form class="search__form">
           <div class="search">
             <input type="text" class="search__input search__input--first" placeholder="Select category">
             <input type="text" class="search__input" placeholder="Current location">
@@ -77,11 +77,11 @@
           </div>
           <div class="search__flags">
             <p class="search__flag-description">Popular search</p>
-            <a href='#' class="search__flag-button">Vet<a>
-            <a href='#' class="search__flag-button">Park<a>
-            <a href='#' class="search__flag-button">Groomer<a>
-            <a href='#' class="search__flag-button">Hotel<a>
-            <a href='#' class="search__flag-button">Pub<a>
+            <a href='#' class="search__flag-button">Vet</a>
+            <a href='#' class="search__flag-button">Park</a>
+            <a href='#' class="search__flag-button">Groomer</a>
+            <a href='#' class="search__flag-button">Hotel</a>
+            <a href='#' class="search__flag-button">Pub</a>
           </div>
         </form>
         <div class="header__links">
@@ -96,13 +96,13 @@
               <object type="image/svg+xml" class='header__link-image' data="images/svg/malmaison.svg"></object>
           </a>
         </div>
-      </section>
-      <section class="header__inner header__inner--dog">
+      </div>
+      <div class="header__inner header__inner--dog">
         <img src="~/images/dog.png" class='header__image' alt="dog">
-      </section>
+      </div>
     </div>
   </header>
-  <section class="features">
+  <div class="features">
     <div class="features__image"></div>
     <div class="features__list">
       <div class="features__item">
@@ -129,73 +129,70 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="section section--store">
+  </div>
+  <div class="section section--store">
     <div class="section__inner section__inner--store-text">
       <h2 class="section__title">Connect anywhere</h2>
       <p class="section__subtitle section__subtitle--store">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
       <div class="section__row">
         <a href="#" class="section__image-link-wrapper">
-          <img class='section__image-link' src="images/appstore.png" alt="appstore" srcset="images/appstore@2x.png 768w, images/appstore@3x.png 1024w">
+          <img class='section__image-link' src="images/appstore.png" alt="appstore" srcset="images/appstore@2x.png 2x, images/appstore@3x.png 3x">
         </a>
         <a href="#" class="section__image-link-wrapper">
-          <img class='section__image-link' src="images/appstore.png" alt="googleplay" srcset="images/googleplay@2x.png 768w, images/googleplay@3x.png 1024w">
+          <img class='section__image-link' src="images/appstore.png" alt="googleplay" srcset="images/googleplay@2x.png 2x, images/googleplay@3x.png 3x">
         </a>
       </div>
     </div>
     <div class="section__inner section__inner--store-image">
-      <img class='section__image-store' src="images/mobiles.png" alt="mobiles" srcset="images/mobiles@2x.png 768w, images/mobiles@3x.png 1024w">
+      <img class='section__image-store' src="images/mobiles.png" alt="mobiles" srcset="images/mobiles@2x.png 2x, images/mobiles@3x.png 3x">
     </div>
-  </section>
-  <section class="slider__container">
+  </div>
+  <div class="slider__container">
     <object type="image/svg+xml" class='slider__rectangle' data="~images/svg/Rectangle.svg"></object>
     <h2 class="slider__title">Featured
       <span class="slider__title slider__title--bold">Vlog</span>
       <object type="image/svg+xml" class='slider__arrow' data="~images/svg/arrow.svg"></object>
     </h2>
-    <div class="slider">
-      <div class="glide slider-vlog">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <div class="slider__slide">
-                <div class="slider__card">
-                  <div class="slider__card-inner slider__card-inner--image">
-                    <img class='slider__image' src="images/vlog1.png" alt="image">
-                  </div>
-                  <div class="slider__card-inner slider__card-inner--text">
-                    <p class="slider__text">Featured Vlog with Dachihype Summer 2018!</p>
-                    <a href='https://www.youtube.com/watch?v=u7k99sVQvNk' target='_blank' class="slider__link">Read more</a>
-                  </div>
+    <div class="glide slider slider-vlog">
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <div class="glide__slide">
+            <div class="slider__slide">
+              <div class="slider__card">
+                <div class="slider__card-inner slider__card-inner--image">
+                  <img class='slider__image' src="images/vlog1.png" alt="image">
+                </div>
+                <div class="slider__card-inner slider__card-inner--text">
+                  <p class="slider__text">Featured Vlog with Dachihype Summer 2018!</p>
+                  <a href='https://www.youtube.com/watch?v=u7k99sVQvNk' target='_blank' class="slider__link">Read more</a>
                 </div>
               </div>
-            </li>
-            <li class="glide__slide">
-              <div class="slider__slide">
-                <div class="slider__card">
-                  <div class="slider__card-inner slider__card-inner--image">
-                    <img class='slider__image' src="images/vlog2.png" alt="image">
-                  </div>
-                  <div class="slider__card-inner slider__card-inner--text">
-                    <p class="slider__text">Plan Pooch VS Yoshi October 2018</p>
-                    <a href='https://www.youtube.com/watch?v=Zws8cACYznA' target='_blank' class="slider__link">Read more</a>
-                  </div>
+            </div>
+          </div>
+          <div class="glide__slide">
+            <div class="slider__slide">
+              <div class="slider__card">
+                <div class="slider__card-inner slider__card-inner--image">
+                  <img class='slider__image' src="images/vlog2.png" alt="image">
+                </div>
+                <div class="slider__card-inner slider__card-inner--text">
+                  <p class="slider__text">Plan Pooch VS Yoshi October 2018</p>
+                  <a href='https://www.youtube.com/watch?v=Zws8cACYznA' target='_blank' class="slider__link">Read more</a>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-      </div>   
-    </div>
+      </div>
+    </div>   
     <h2 class="slider__title">Featured
       <span class="slider__title slider__title--bold">Blog</span>
       <object type="image/svg+xml" class='slider__arrow' data="~images/svg/arrow.svg"></object>
     </h2>
-    <div class="slider">
-      <div class="glide slider-blog">
+    <div class="glide slider slider-blog">
         <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
+          <div class="glide__slides">
+            <div class="glide__slide">
               <div class="slider__slide">
                 <div class="slider__card">
                   <div class="slider__card-inner slider__card-inner--image">
@@ -207,8 +204,8 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="glide__slide">
+            </div>
+            <div class="glide__slide">
               <div class="slider__slide">
                 <div class="slider__card">
                   <div class="slider__card-inner slider__card-inner--image">
@@ -220,8 +217,8 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="glide__slide">
+            </div>
+            <div class="glide__slide">
               <div class="slider__slide">
                 <div class="slider__card">
                   <div class="slider__card-inner slider__card-inner--image">
@@ -233,8 +230,8 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="glide__slide">
+            </div>
+            <div class="glide__slide">
               <div class="slider__slide">
                 <div class="slider__card">
                   <div class="slider__card-inner slider__card-inner--image">
@@ -248,11 +245,12 @@
               </div>
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  <section class="section section--register">
+  </div>
+  <div class="section section--register">
     <div class="section__inner section__inner--register-image">
       <img class='section__register-image' src="images/subscribe.png" alt="subscribe" >
     </div>
@@ -261,8 +259,8 @@
       <p class="section__subtitle section__subtitle--register">Sign up today for free, and pooch-pin your faves to your dashboard today!</p>
       <a href="#" class="section__button">Register for free</a>
     </div>
-  </section>
-  <section class="subscribe">
+  </div>
+  <div class="subscribe">
     <div class="subscribe__image-wrapper">
       <img class="subscribe__image" src="images/dogg2.png" alt="dog">
     </div>
@@ -271,13 +269,13 @@
         <span class='subscribe__title subscribe__title--bold'>#Planpooch?</span>
       </h2>
       <p class="subscribe__text">Sign up below, to join our pooch friendly newsletter each month. Receive free discounts, vlogs and only pooch news. No spam! (we paw promise)</p>
-      <form action="" class="subscribe__form">
+      <form class="subscribe__form">
         <input type="email" class="subscribe__input" placeholder="Email address">
         <button class="subscribe__button">Subscribe</button>
       </form>
     </div>
-  </section>
-  <section class="instagram">
+  </div>
+  <div class="instagram">
     <a href="https://www.instagram.com/planpooch/" class="instagram__link">
       <img src="images/insta1.png" alt="insta" class="instagram__image">
       <div class="instagram__inner">
@@ -320,10 +318,10 @@
         <p class="instagram__text">view more on @planpooch</p>
       </div>
     </a> 
-  </section>
+  </div>
   <footer class="footer">
-    <section class="footer__inner">
-      <section class="footer__row footer__row--header">
+    <div class="footer__inner">
+      <div class="footer__row footer__row--header">
         <object class="footer__logo" data="images/svg/Group.svg" type="image/svg+xml"></object>
         <ul class="footer__list">
           <li class="footer__item">
@@ -347,8 +345,8 @@
             <a class='footer__text footer__text--link' href='#' target='_blank'>FAQ</a>
           </li>
         </ul>
-      </section>
-      <section class="footer__col">
+      </div>
+      <div class="footer__col">
         <div class="footer__block">
           <p class="footer__text footer__text--bold">Contact</p>
           <p class="footer__text footer__text--email">
@@ -368,11 +366,11 @@
             <object class='footer__social-icon' data="images/svg/fb.svg" type="image/svg+xml"></object>
           </a>
         </div>
-      </section>
-    </section>
-    <section class="footer__row">
+      </div>
+    </div>
+    <div class="footer__row">
       <p class="footer__text">Copyright 2019 | Planpooch ™ | All Rights Reserved</p>
-    </section>
+    </div>
   </footer>
   <script src='js/index.js'></script>
 </body>

@@ -8,28 +8,28 @@ const params = {
   gap: 20,
   peek: {
     before: 0,
-    after: '200px',
+    after: '100px',
   },
   breakpoints: {
     1540: {
       perView: 4,
       peek: {
         before: 0,
-        after: '200px',
+        after: '50px',
       },
     },
     1280: {
       perView: 3,
       peek: {
         before: 0,
-        after: '260px',
+        after: '120px',
       },
     },
     900: {
       perView: 2,
       peek: {
         before: 0,
-        after: '200px',
+        after: '120px',
       },
     },
     800: {

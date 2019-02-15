@@ -3,6 +3,7 @@
   &__container {
     padding: 30px 0 60px 34px;
     position: relative;
+    margin-bottom: 32px;
     @media screen and (min-width: $screen-desktop) {
       font-size: $size-7;
       padding-left: 60px;
@@ -14,6 +15,7 @@
     @media screen and (min-width: $screen-fullhd) {
       padding-left: 140px;
     }
+    
   }
   &__rectangle {
     position: absolute;
@@ -72,8 +74,6 @@
   }
   &__slide {
     padding: 16px 24px 26px 26px;
+    // width: 320px;
   }
-}
-.left-align-slick > .slick-list > .slick-track {    
-  margin-left:0;
 }
