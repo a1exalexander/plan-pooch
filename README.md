@@ -1,22 +1,21 @@
-# [Plan Pooch](https://a1exalexander.github.io/plan-pooch)
+# [Plan Pooch](https://a1exalexander.github.io/plan-pooch/dist/)
 
 ## Getting started
 
-1.  Install with yarn:
+Install with npm:
 
 ```shell
-yarn global add parcel-bundler
+npm install
 ```
 
-or with npm:
-
+Run dev derver
 ```shell
-npm install -g parcel-bundler
+npm run dev
 ```
 
-2. Run in command line
+Build
 ```shell
-parcel index.html
+npm run build
 ```
 
 See [parceljs.org](https://parceljs.org) for more documentation!
