@@ -1,4 +1,4 @@
-# Plan Pooch
+# [Plan Pooch](https://a1exalexander.github.io/plan-pooch)
 
 ## Getting started
 
