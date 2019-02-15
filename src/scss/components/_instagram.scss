@@ -1,0 +1,80 @@
+.instagram {
+  background-color: $P7;
+  @include flex-row(stretch, center);
+  overflow-x: hidden;
+  &__link {
+    flex: 0 0 50%;
+    position: relative;
+    @media screen and (min-width: $screen-iphone-6) {
+      flex-basis: 33.33%;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      flex-basis: 25%;
+    }
+    @media screen and (min-width: $screen-ipad) {
+      flex-basis: 20%;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      flex-basis: 16.66%;
+    }
+    &:hover .instagram {
+      &__image {
+        filter: blur(4px);
+      }
+      &__inner {
+        opacity: 1;
+      }
+    }
+  }
+  &__inner {
+    position: absolute;
+    top: 1px;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    @include flex-col(center, center);
+    padding: 12px;
+    opacity: 0;
+    will-change: opacity;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.38);
+    transition-property: color, opacity, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  &__icon {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 12px;
+    pointer-events: none;
+    @media screen and (min-width: $screen-tablet) {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      width: 38px;
+      height: 38px;
+      margin-bottom: 42px;
+    }
+  }
+  &__text {
+    font-size: $size-3;
+    font-weight: 500;
+    color: $N0;
+    text-align: center;
+    @media screen and (min-width: $screen-tablet) {
+      font-size: $size-5;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      font-size: $size-7;
+      line-height: 1.6;
+    }
+  }
+  &__image {
+    will-change: filter;
+    transition-property: filter, color, opacity, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+}

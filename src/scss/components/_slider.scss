@@ -1,0 +1,79 @@
+.slider {
+  margin-bottom: 70px;
+  &__container {
+    padding: 30px 0 60px 34px;
+    position: relative;
+    @media screen and (min-width: $screen-desktop) {
+      font-size: $size-7;
+      padding-left: 60px;
+    }
+    @media screen and (min-width: $screen-desktop-large) {
+      font-size: $size-7;
+      padding-left: 100px;
+    }
+    @media screen and (min-width: $screen-fullhd) {
+      padding-left: 140px;
+    }
+  }
+  &__rectangle {
+    position: absolute;
+    left: -40px;
+    bottom: 260px;
+  }
+  &__title {
+    padding-left: 16px;
+    font-size: $size-6;
+    color: $N5;
+    font-weight: 300;
+    margin-bottom: 32px;
+    &--bold {
+      font-weight: 500;
+      margin-right: 8px;
+    }
+  }
+  &__card {
+    width: 253px;
+    height: 292px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: $N0;
+    @include flex-col(stretch, stretch);
+    overflow: visible;
+  }
+  &__card-inner {
+    &--image {
+      flex: 0 0 153px;
+      overflow: hidden;
+    }
+    &--text {
+      flex: 1 1;
+      padding: 16px;
+      @include flex-col(space-between, flex-start);
+    }
+  }
+  &__text {
+    font-size: $size-3;
+    font-weight: 500;
+    color: $N5;
+  }
+  &__link {
+    color: $P4;
+    font-weight: 500;
+    font-size: $size-3;
+    transition: color ease-in-out 0.2s;
+    &:hover {
+      @media screen and (min-width: $screen-desktop) {
+        color: $P2;
+      }
+    }
+  }
+  &__image {
+    border-radius: 10px 10px 0 0;
+  }
+  &__slide {
+    padding: 16px 24px 26px 26px;
+  }
+}
+.left-align-slick > .slick-list > .slick-track {    
+  margin-left:0;
+}

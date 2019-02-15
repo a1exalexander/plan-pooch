@@ -1,51 +1,189 @@
 .header {
-  min-height: 100vh;
+  height: 100vh;
   background-image: url('~/images/svg/bg-maps.svg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  position: relative;
+  @include flex-col(stretch, stretch);
+  @media screen and (min-width: $screen-desktop) {
+    min-height: 100vh;
+    height: auto;
+  }
   &__wrapper {
-    padding: 50px 0 0;
+    padding: 16px 0 0;
+    overflow: hidden;
+    @include flex-col(flex-start, stretch);
+    flex: 1 1 auto;
+    @media screen and (min-width: $screen-iphone-6) {
+      padding: 40px 0 0;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      flex-direction: row;
+    }
   }
   &__title {
     @extend %headline-mobile-text;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    @media screen and (min-width: $screen-tablet) {
+      font-size: $size-6;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      font-size: $size-8;
+      line-height: 1;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $screen-desktop-large) {
+      font-size: 42px;
+    }
+    @media screen and (min-width: 1300px) {
+      font-size: $size-9;
+    }
     &--bold {
       font-weight: 600;
     }
   }
   &__subtitle {
     @extend %main-mobile-text;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     text-align: center;
-    padding: 0 35px;
+    padding: 0 16px;
+    @media screen and (min-width: $screen-iphone-6) {
+      padding: 0 35px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      font-size: $size-4;
+      font-weight: 300;
+      line-height: 1.67;
+      text-align: left;
+      padding: 0;
+      margin-bottom: 44px;
+    }
+    @media screen and (min-width: $screen-desktop-large) {
+      font-size: $size-5;
+    }
     &--bold {
       margin: 0;
       padding: 0;
       font-weight: 600;
     }
     &--link {
-      display: inline-block;
+      display: block;
       color: $P3;
       font-weight: 500;
       text-decoration: underline;
       text-decoration-color: $P3;
+      @media screen and (min-width: $screen-desktop) {
+        display: inline-block;
+        color: $N5;
+      }
     }
   }
   &__links {
     height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 18px 20px;
+    background-color: rgba(255, 255, 255, 0.87);
+    z-index: 1;
     @include flex-row(space-between, center);
+    @media screen and (min-width: $screen-tablet) {
+      justify-content: flex-start;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      background-color: transparent;
+      position: relative;
+      left: 0;
+      width: 140%;
+      padding-bottom: 200px;
+    }
   }
   &__link {
-    margin-right: 20px;
+    margin-right: 10px;
     flex: 20%;
+    max-width: 150px;
     display: flex;
+    cursor: pointer;
+    @media screen and (min-width: $screen-iphone-plus) {
+      margin-right: 20px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      margin-right: 48px;
+    }
   }
   &__link-description {
     white-space: nowrap;
-    margin-right: 20px;
+    margin-right: 10px;
+    font-size: $size-1;
+    color: $N5;
+    cursor: default;
+    @media screen and (min-width: $screen-iphone-plus) {
+      margin-right: 20px;
+      font-size: $size-2;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      margin-right: 48px;
+      font-size: $size-5;
+      font-weight: 300;
+    }
   }
   &__link-image {
-
+    width: 100%;
+    max-height: 30px;
+    pointer-events: none;
+  }
+  &__inner {
+    @media screen and (min-width: $screen-desktop) {
+      flex: 0 0 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    &--dog {
+      flex: 0 0 50%;
+      overflow: hidden;
+      @media screen and (min-width: $screen-desktop) {
+        flex: 0 0 50%;
+        background-image: url('~/images/dog@2x.png');
+        background-size: 120%;
+        background-position: 20% 0%;
+        background-repeat: no-repeat;
+        overflow: visible;
+      }
+      @media screen and (min-width: $screen-desktop-large) {
+        background-image: url('~/images/dog@3x.png');
+      }
+    }
+    &--map {
+      @media screen and (min-width: $screen-desktop) {
+        background-image: url('~/images/svg/map-bg-left.svg');
+        background-size: 20%;
+        background-position: 5% 65%;
+        background-repeat: no-repeat;
+        padding: 0 0 0 120px;
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    left: -30%;
+    top: 0;
+    transition-property: left, top, width;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    @media screen and (min-width: $screen-iphone-plus) {
+      left: -45%;
+      width: 140%;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      left: -15%;
+      width: 100%;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      display: none;
+    }
   }
 }

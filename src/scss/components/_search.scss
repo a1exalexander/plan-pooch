@@ -1,20 +1,79 @@
 .search {
   box-shadow: 0 10px 25px 0 rgba(55, 55, 132, 0.16);
   background-color: $N0;
+  @media screen and (min-width: $screen-desktop) {
+    margin-bottom: 38px;
+  }
+  @media screen and (min-width: $screen-desktop-large) {
+    display: flex;
+  }
   &__flags {
     display: none;
+    @media screen and (min-width: $screen-desktop) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  &__flag-description {
+    @extend %main-text;
+    margin-right: 32px;
+    white-space: nowrap;
+    cursor: default;
+  }
+  &__flag-button {
+    margin-right: 16px;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid $N1;
+    font-size: $size-4;
+    font-weight: 500;
+    color: $N3;
+    background-color: $N0;
+    cursor: pointer;
+    transition-property: color, background-color, border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    @media screen and (min-width: $screen-desktop) {
+      &:hover {
+        border-color: $N2;
+      }
+    }
+    &:active {
+      color: $N0;
+      background-color: $P3;
+      border-color: $P3;
+    }
   }
   &__form {
     padding: 0 16px;
+    width: 100%;
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 100px;
+      padding: 0;
+    }
   }
   &__input {
     @extend %input;
     width: 100%;
     border: none;
+    @media screen and (min-width: $screen-desktop-large) {
+      flex: 0 0 45%;
+      border-radius: none;
+      padding: 0 32px;
+      min-height: 66px;
+    }
     &--first {
       border-bottom: 1px solid $N1;
       border-radius: 4px 4px 0 0;
+      @media screen and (min-width: $screen-desktop-large) {
+        flex: 0 0 35%;
+        border-radius: 4px 0 0 4px;
+        border-bottom: none;
+        border-right: 1px solid $N1;
+      }
     }
+    
   }
   &__button {
     width: 100%;
@@ -23,15 +82,32 @@
     border-radius: 0 0 4px 4px;
     background-image: linear-gradient(99deg, #a96de0, #06c1ab);
     color: $N0;
+    position: relative;
     font-size: $size-3;
     font-weight: 500;
-    transition-property: background-image, background, linear-gradient;
+    transition-property: filter;
     transition-duration: 0.6s;
     transition-timing-function: ease-in-out;
-    @media screen and (min-width: $screen-desktop) {
+    @media screen and (min-width: $screen-desktop-large) {
+      min-height: 66px;
+      flex: 0 0 20%;
+      border-radius: 0 4px 4px 0;
+      background-image: linear-gradient(123deg, #a96de0, #06c1ab);
       &:hover {
-        background-image: linear-gradient(200deg, #a96de0, #06c1ab);
+        filter: hue-rotate(320deg);
       }
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    top: -36px;
+    @media screen and (min-width: $screen-desktop-large) {
+      right: auto;
+      top: auto;
+      left: -40px;
     }
   }
 }

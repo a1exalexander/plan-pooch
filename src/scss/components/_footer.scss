@@ -1,0 +1,78 @@
+.footer {
+  background-color: $P7;
+  padding: 44px 54px 44px 16px;
+  @media screen and (min-width: $screen-iphone-plus) {
+    padding: 46px 70px 46px 44px;
+  }
+  @media screen and (min-width: $screen-ipad) {
+    padding-right: 100px;
+  }
+  @media screen and (min-width: $screen-desktop) {
+    padding: 70px 160px 40px 140px;
+  }
+  &__row {
+    @include flex-row(space-between, flex-start);
+    &--social {
+      justify-content: flex-start;
+    }
+    &--header {
+      margin-bottom: 32px;
+      @media screen and (min-width: $screen-desktop) {
+        flex: 0 1 60%;
+      }
+    }
+  }
+  &__inner {
+    margin-bottom: 50px;
+    @media screen and (min-width: $screen-desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+  &__social-icon {
+    margin-right: 40px;
+    pointer-events: none;
+    transition: opacity ease-in-out 0.2s;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    margin-bottom: 18px;
+  }
+  &__text {
+    font-size: $size-2;
+    color: $N0;
+    transition: opacity ease-in-out 0.2s;
+    &--bold {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    &--email {
+      @include flex-row(flex-start, center);
+    }
+    &--address {
+      max-width: 300px;
+      margin-bottom: 26px;
+      @media screen and (min-width: $screen-desktop) {
+        max-width: 150px;
+      }
+    }
+    &--link:hover,
+    &--link:hover * {
+      @media screen and (min-width: $screen-desktop) {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__block {
+    margin-bottom: 40px;
+  }
+  &__mail-icon {
+    width: 14px;
+    height: 14px;
+    fill: $N0;
+    margin-right: 6px;
+    transition: opacity ease-in-out 0.2s;
+  }
+}

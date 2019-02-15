@@ -1,0 +1,96 @@
+.features {
+  position: relative;
+  z-index: 4;
+  @include flex-col(flex-start, flex-start);
+  @media screen and (min-width: $screen-desktop) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 160px;
+  }
+  &__image {
+    background-image: url('~/images/dog-helmet.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 340px;
+    background-color: rgba(255, 255, 255, 0.87);
+    transition: height ease-in-out 0.2s;
+    align-self: stretch;
+    @media screen and (min-width: $screen-iphone-plus) {
+      height: 500px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      background-image: url('~/images/dog-helmet@2x.png');
+      height: 600px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      height: 800px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      background-image: url('~/images/dog-helmet@3x.png');
+      flex: 0 0 50%;
+      background-size: contain;
+      height: auto;
+      min-height: 700px;
+    }
+  }
+  &__list {
+    padding: 46px 16px 48px;
+    @media screen and (min-width: $screen-tablet) {
+      align-self: center;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      padding-left: 60px;
+    }
+  }
+  &__item {
+    @include flex-row(stretch, center);
+    margin-bottom: 58px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__item-image {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 0 0 60px;
+    margin-right: 16px;
+    &--search {
+      height: 60px;
+      background-image: url('~/images/svg/search.svg');
+    }
+    &--signup {
+      height: 90px;
+      background-size: 110%;
+      background-image: url('~/images/svg/sign-up.svg');
+    }
+    &--popin {
+      height: 60px;
+      background-image: url('~/images/svg/location.svg');
+    }
+  }
+  &__item-text-wrapper {
+    &--margin {
+      margin-bottom: 12px;
+    }
+  }
+  &__name {
+    font-size: $size-4;
+    font-weight: 500;
+    color: $P6;
+    margin-bottom: 6px;
+  }
+  &__text {
+    font-size: $size-3;
+    color: $N5;
+    &--light {
+      color: $N3;
+    }
+  }
+}

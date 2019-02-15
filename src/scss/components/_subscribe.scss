@@ -1,0 +1,108 @@
+.subscribe {
+  padding: 90px 16px 56px;
+  @media screen and (min-width: $screen-iphone-plus) {
+    padding: 90px 48px 56px;
+  }
+  @media screen and (min-width: $screen-tablet) {
+    padding: 90px 60px 56px;
+  }
+  @media screen and (min-width: $screen-desktop) {
+    display: flex;
+    padding: 60px;
+  }
+  &__title {
+    font-size: $size-7;
+    color: $P5;
+    font-weight: 300;
+    margin-bottom: 24px;
+    text-align: center;
+    &--bold {
+      font-weight: 500;
+      @media screen and (min-width: $screen-desktop) {
+        font-weight: 600;
+      }
+    }
+    @media screen and (min-width: $screen-desktop) {
+      font-size: $size-9;
+      text-align: left;
+    }
+  }
+  &__text {
+    font-size: $size-3;
+    color: $N6;
+    margin-bottom: 32px;
+    text-align: center;
+    padding: 0 16px;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 42px;
+      max-width: 720px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      max-width: 560px;
+      text-align: left;
+      padding: 0;
+      font-size: $size-4;
+      color: $N3;
+    }
+  }
+  &__form {
+    border-radius: 5px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    width: 100%;
+    @include flex-col(flex-start, stretch);
+    @media screen and (min-width: $screen-tablet) {
+      width: 420px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      flex-direction: row;
+      justify-content: stretch;
+    }
+    @media screen and (min-width: $screen-fullhd) {
+      width: 480px;
+    }
+  }
+  &__input {
+    @extend %input;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    @media screen and (min-width: $screen-desktop) {
+      flex: 1 1;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+  &__button {
+    min-height: 48px;
+    @extend %button;
+    box-shadow: none;
+    border-radius: 0 0 5px 5px;
+    background-color: $P4;
+    color: $N0;
+    font-weight: 500;
+    @media screen and (min-width: $screen-desktop) {
+      flex: 0 0 154px;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+  &__inner {
+    @include flex-col(center, center);
+    @media screen and (min-width: $screen-desktop) {
+      flex: 0 0 50%;
+      align-items: flex-start;
+    }
+  }
+  &__image-wrapper {
+    display: none;
+    @media screen and (min-width: $screen-desktop) {
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 50%;
+    }
+  }
+  &__image {
+    max-width: 320px;
+    align-items: center;
+  }
+}

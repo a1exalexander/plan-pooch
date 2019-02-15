@@ -1,0 +1,200 @@
+.section {
+  background-image: linear-gradient(31deg, #6bced6, #9f88fd);
+  padding: 40px 16px;
+  @media screen and (min-width: $screen-desktop) {
+    display: flex;
+  }
+  &--store {
+    margin-bottom: 200px;
+    @media screen and (min-width: $screen-desktop) {
+      padding: 0 140px;
+    }
+  }
+  &--register {
+    padding: 0;
+  }
+  &__title {
+    font-size: $size-6;
+    font-weight: 500;
+    color: $N0;
+    text-align: center;
+    margin-bottom: 16px;
+    @media screen and (min-width: $screen-tablet) {
+      font-size: $size-7;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      font-size: $size-8;
+      color: $N5;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+    &--register {
+      color: $N0;
+    }
+  }
+  &__subtitle {
+    font-size: $size-3;
+    color: $N0;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 32px;
+    @media screen and (min-width: $screen-desktop) {
+      font-size: $size-4;
+      margin-bottom: 56px;
+      font-weight: 400;
+      text-align: left;
+    }
+    &--store {
+      @media screen and (min-width: $screen-desktop) {
+        max-width: 270px;
+      }
+    }
+    &--register {
+      @media screen and (min-width: $screen-desktop) {
+        max-width: 360px;
+        margin-bottom: 42px;
+      }
+    }
+  }
+  &__row {
+    @include flex-row(space-between, center);
+    @media screen and (min-width: $screen-tablet) {
+      justify-content: center;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      justify-content: flex-start;
+      position: relative;
+      left: -2px;
+    }
+  }
+  &__image-link-wrapper {
+    width: 150px;
+    @media screen and (min-width: $screen-tablet) {
+      width: 170px;
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
+  &__inner {
+    @media screen and (min-width: $screen-desktop) {
+      flex: 0 0 50%;
+    }
+    &--store-text {
+      margin-bottom: 26px;
+      @media screen and (min-width: $screen-desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    &--store-image {
+      position: relative;
+      height: 200px;
+      @include flex-col(center, center);
+      @media screen and (min-width: $screen-tablet) {
+        height: 268px;
+      }
+      @media screen and (min-width: $screen-desktop) {
+        height: 420px;
+      }
+      @media screen and (min-width: $screen-fullhd) {
+        height: 460px;
+      }
+    }
+    &--register-text {
+      padding: 16px 16px 40px;
+      @include flex-col(center, center);
+      @media screen and (min-width: $screen-desktop) {
+        align-items: flex-start;
+        padding: 40px 16px 40px 40px;
+      }
+    }
+    &--register-image {
+      position: relative;
+      height: 180px;
+      bottom: 30px;
+      @include flex-col(center, flex-start);
+      @media screen and (min-width: $screen-iphone-6) {
+        height: 200px;
+      }
+      @media screen and (min-width: $screen-iphone-plus) {
+        height: 220px;
+      }
+      @media screen and (min-width: $screen-tablet) {
+        height: 250px;
+      }
+      @media screen and (min-width: $screen-ipad) {
+        height: 340px;
+        bottom: 40px;
+      }
+      @media screen and (min-width: $screen-desktop) {
+        height: 380px;
+        bottom: 60px;
+      }
+      @media screen and (min-width: $screen-fullhd) {
+        height: 400px;
+      }
+    }
+  }
+  &__image-store {
+    position: absolute;
+    bottom: -180px;
+    max-width: 280px;
+    @media screen and (min-width: $screen-iphone-plus) {
+      bottom: -200px;
+      max-width: 320px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      max-width: 380px;
+      bottom: -220px;
+    }
+    @media screen and (min-width: $screen-ipad) {
+      max-width: 400px;
+      bottom: -240px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      position: relative;
+      bottom: 0;
+      left: 20px;
+      max-width: 100%;
+    }
+    @media screen and (min-width: $screen-desktop-large) {
+      max-width: 90%;
+    }
+    @media screen and (min-width: $screen-fullhd) {
+      max-width: 980px;
+    }
+  }
+  &__register-image {
+    @media screen and (min-width: $screen-iphone-plus) {
+      max-width: 400px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      max-width: 500px;
+    }
+    @media screen and (min-width: $screen-ipad) {
+      max-width: 630px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      max-width: 680px;
+    }
+    @media screen and (min-width: $screen-desktop-large) {
+      max-width: 720px;
+    }
+    @media screen and (min-width: $screen-fullhd) {
+      max-width: 800px;
+    }
+  }
+  &__button {
+    @extend %button;
+    background-color: $PK1;
+    color: $N0;
+    &:hover {
+      @media screen and (min-width: $screen-desktop) {
+        box-shadow: 0 5px 10px 0 rgba(55, 55, 132, 0.1);
+        filter: brightness(0.95);
+      }
+    }
+  }
+}
