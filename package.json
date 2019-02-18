@@ -1,28 +1,40 @@
 {
-  "name": "fundplatform-mobile",
+  "name": "plan.pooch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "del-cli dist",
-    "dev": "del-cli dist && parcel src/index.html --no-cache --open",
-    "build": "del-cli dist && parcel build src/index.html --public-url ./"
+    "dev": "gulp",
+    "build": "gulp build"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "latest",
-    "@babel/preset-env": "latest",
-    "autoprefixer": "latest",
-    "cssnano": "latest",
-    "del-cli": "latest",
-    "parcel-bundler": "^1.11.0",
-    "sass": "^1.17.0"
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-using": "^0.1.1",
+    "node-sass": "^4.11.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.2.6",
-    "jquery": "^3.3.1",
-    "slick-carousel": "^1.8.1"
+    "@glidejs/glide": "^3.2.6"
   }
 }

@@ -1,6 +1,6 @@
 .header {
   height: 100vh;
-  background-image: url('~/images/svg/bg-maps.svg');
+  background-image: url('../images/svg/bg-maps.svg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -46,7 +46,6 @@
   }
   &__subtitle {
     @extend %main-mobile-text;
-    margin-bottom: 12px;
     text-align: center;
     padding: 0 16px;
     @media screen and (min-width: $screen-iphone-6) {
@@ -58,7 +57,6 @@
       line-height: 1.67;
       text-align: left;
       padding: 0;
-      margin-bottom: 44px;
     }
     @media screen and (min-width: $screen-desktop-large) {
       font-size: $size-5;
@@ -78,6 +76,12 @@
         display: inline-block;
         color: $N5;
       }
+    }
+    &--yellow {
+      color: rgb(255, 238, 0);
+    }
+    &--margin {
+      margin-bottom: 44px;
     }
   }
   &__links {
@@ -147,19 +151,19 @@
       overflow: hidden;
       @media screen and (min-width: $screen-desktop) {
         flex: 0 0 50%;
-        background-image: url('~/images/dog@2x.png');
+        background-image: url('../images/dog@2x.png');
         background-size: 120%;
         background-position: 20% 0%;
         background-repeat: no-repeat;
         overflow: visible;
       }
       @media screen and (min-width: $screen-desktop-large) {
-        background-image: url('~/images/dog@3x.png');
+        background-image: url('../images/dog@3x.png');
       }
     }
     &--map {
       @media screen and (min-width: $screen-desktop) {
-        background-image: url('~/images/svg/map-bg-left.svg');
+        background-image: url('../images/svg/map-bg-left.svg');
         background-size: 20%;
         background-position: 5% 65%;
         background-repeat: no-repeat;

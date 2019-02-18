@@ -8,7 +8,7 @@
     margin-bottom: 160px;
   }
   &__image {
-    background-image: url('~/images/dog-helmet.png');
+    background-image: url('../images/dog-helmet.png');
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -20,14 +20,14 @@
       height: 500px;
     }
     @media screen and (min-width: $screen-tablet) {
-      background-image: url('~/images/dog-helmet@2x.png');
+      background-image: url('../images/dog-helmet@2x.png');
       height: 600px;
     }
     @media screen and (min-width: $screen-tablet) {
       height: 800px;
     }
     @media screen and (min-width: $screen-desktop) {
-      background-image: url('~/images/dog-helmet@3x.png');
+      background-image: url('../images/dog-helmet@3x.png');
       flex: 0 0 50%;
       background-size: contain;
       height: auto;
@@ -63,16 +63,16 @@
     margin-right: 16px;
     &--search {
       height: 60px;
-      background-image: url('~/images/svg/search.svg');
+      background-image: url('../images/svg/search.svg');
     }
     &--signup {
       height: 90px;
       background-size: 110%;
-      background-image: url('~/images/svg/sign-up.svg');
+      background-image: url('../images/svg/sign-up.svg');
     }
     &--popin {
       height: 60px;
-      background-image: url('~/images/svg/location.svg');
+      background-image: url('../images/svg/location.svg');
     }
   }
   &__item-text-wrapper {
