@@ -1,4 +1,12 @@
-# [Plan Pooch](https://a1exalexander.github.io/plan-pooch/dist/)
+# Plan Pooch 
+
+>Landing page created using HTML, SCSS, Javascript (include ES5, ES6);
+
+Dependencies:
++ [Gulp](https://gulpjs.com/)
++ [Glide.js](https://glidejs.com/)
+
+[Demo](https://a1exalexander.github.io/plan-pooch/dist/)
 
 ## Getting started
 
